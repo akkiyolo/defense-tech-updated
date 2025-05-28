@@ -1,0 +1,45 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: "assets/images/uploads" # Media files will be stored in the repo under assets/images/uploads
+public_folder: "/assets/images/uploads" # The src attribute for uploaded media will begin with /assets/images/uploads
+
+collections:
+  - name: "articles" # Used in routes, e.g., /admin/collections/articles
+    label: "Article" # Used in the UI
+    folder: "articles" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "article"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publication Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - {label: "Category", name: "category", widget: "select", options: ["Land Systems", "Naval Systems", "Air Systems", "Space & Cyber", "Future Technologies"]}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Summary", name: "summary", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Enable Comments", name: "comments", widget: "boolean", default: true}
+
+  - name: "pages" # Used in routes, e.g., /admin/collections/pages
+    label: "Page" # Used in the UI
+    folder: "pages" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "settings"
+    label: "Settings"
+    editor:
+      preview: false
+    files:
+      - label: "Site Settings"
+        name: "site"
+        file: "site_settings.json"
+        fields:
+          - {label: "Site Title", name: "title", widget: "string"}
+          - {label: "Site Description", name: "description", widget: "text"}
+          - {label: "Featured Articles on Homepage", name: "featured_count", widget: "number", default: 3, value_type: "int", min: 1, max: 10}

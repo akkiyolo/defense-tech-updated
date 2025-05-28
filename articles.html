@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles | Defense Technology</title>
+    <meta name="description" content="Browse the latest articles on defense technology including land, naval, air, space and cyber systems.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Netlify Identity Widget -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Defense<span>Tech</span></a>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Systems <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="pages/land.html">Land Systems</a>
+                            <a href="pages/naval.html">Naval Systems</a>
+                            <a href="pages/air.html">Air Systems</a>
+                            <a href="pages/space-cyber.html">Space & Cyber</a>
+                        </div>
+                    </li>
+                    <li><a href="pages/future.html">Future Tech</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="articles.html" class="active">Articles</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/articles-hero.jpg');">
+        <div class="container hero-content">
+            <h1>Defense Technology Articles</h1>
+            <p>In-depth analysis and information on modern military systems and technologies.</p>
+        </div>
+    </section>
+
+    <!-- Articles Filter Section -->
+    <section class="articles-filter">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="category-filter">Category:</label>
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="land systems">Land Systems</option>
+                        <option value="naval systems">Naval Systems</option>
+                        <option value="air systems">Air Systems</option>
+                        <option value="space & cyber">Space & Cyber</option>
+                        <option value="future technologies">Future Technologies</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="tag-filter">Tag:</label>
+                    <select id="tag-filter">
+                        <option value="all">All Tags</option>
+                        <!-- Tags will be populated dynamically -->
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort-filter">Sort By:</label>
+                    <select id="sort-filter">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="az">A-Z</option>
+                        <option value="za">Z-A</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Grid Section -->
+    <section class="articles-grid">
+        <div class="container">
+            <div class="card-grid" id="articles-container">
+                <!-- Articles will be loaded here dynamically -->
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i> Loading articles...
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="pagination-prev" disabled><i class="fas fa-chevron-left"></i> Previous</button>
+                <div class="pagination-numbers">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                </div>
+                <button class="pagination-next">Next <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter bg-light">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated on Defense Technology</h2>
+                <p>Subscribe to our newsletter to receive the latest articles and updates on modern military systems.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" id="newsletter-email" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+                <div id="newsletter-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Defense<span>Tech</span></h3>
+                    <p>Exploring modern military technology and defense systems across all domains.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/land.html">Land Systems</a></li>
+                        <li><a href="pages/naval.html">Naval Systems</a></li>
+                        <li><a href="pages/air.html">Air Systems</a></li>
+                        <li><a href="pages/space-cyber.html">Space & Cyber</a></li>
+                        <li><a href="pages/future.html">Future Tech</a></li>
+                        <li><a href="pages/about.html">About</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="admin/">Admin Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Disclaimer</h3>
+                    <p>This website is for educational purposes only. All information is publicly available and not classified.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DefenseTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/article-loader.js"></script>
+    <script>
+        // Newsletter form handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const newsletterForm = document.getElementById('newsletter-form');
+            const newsletterMessage = document.getElementById('newsletter-message');
+            
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const email = document.getElementById('newsletter-email').value;
+                    
+                    // In a real implementation, this would send the email to a server
+                    // For this demo, we'll just show a success message
+                    
+                    newsletterMessage.innerHTML = '<p class="success">Thank you for subscribing! You will receive our latest updates.</p>';
+                    newsletterForm.reset();
+                });
+            }
+        });
+    </script>
+    <!-- Netlify Identity Widget Script -->
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>

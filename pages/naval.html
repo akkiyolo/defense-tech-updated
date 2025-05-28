@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naval Systems | Defense Technology</title>
+    <meta name="description" content="Explore modern naval defense systems including aircraft carriers, submarines, destroyers, and unmanned naval vehicles.">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="../index.html" class="logo">Defense<span>Tech</span></a>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Systems <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="land.html">Land Systems</a>
+                            <a href="naval.html">Naval Systems</a>
+                            <a href="air.html">Air Systems</a>
+                            <a href="space-cyber.html">Space & Cyber</a>
+                        </div>
+                    </li>
+                    <li><a href="future.html">Future Tech</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/images/naval-hero.jpg');">
+        <div class="container hero-content">
+            <h1>Naval Defense Systems</h1>
+            <p>Exploring aircraft carriers, submarines, destroyers, and unmanned naval vehicles that control the seas.</p>
+        </div>
+    </section>
+
+    <!-- Aircraft Carriers Section -->
+    <section id="carriers">
+        <div class="container">
+            <div class="section-title">
+                <h2>Aircraft Carriers</h2>
+            </div>
+            <div class="card-grid">
+                <!-- Gerald R. Ford Class Card -->
+                <div class="card" id="ford">
+                    <div class="card-img">
+                        <img src="../assets/images/ford-carrier.jpg" alt="Gerald R. Ford Class aircraft carrier">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Gerald R. Ford Class</h3>
+                        <p>The Gerald R. Ford class is the newest class of nuclear-powered aircraft carriers for the United States Navy, designed to replace the Nimitz-class carriers.</p>
+                        <ul>
+                            <li><strong>Displacement:</strong> 100,000 tons</li>
+                            <li><strong>Length:</strong> 1,106 ft</li>
+                            <li><strong>Aircraft:</strong> 75+</li>
+                            <li><strong>Propulsion:</strong> Nuclear (2 A1B reactors)</li>
+                            <li><strong>Crew:</strong> 4,550 (ship, air wing and staff)</li>
+                            <li><strong>Features:</strong> Electromagnetic Aircraft Launch System (EMALS), Advanced Arresting Gear (AAG)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Queen Elizabeth Class Card -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../assets/images/queen-elizabeth.jpg" alt="Queen Elizabeth Class aircraft carrier">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Queen Elizabeth Class</h3>
+                        <p>The Queen Elizabeth class is a class of two aircraft carriers of the Royal Navy, the largest warships ever built for the UK.</p>
+                        <ul>
+                            <li><strong>Displacement:</strong> 65,000 tons</li>
+                            <li><strong>Length:</strong> 932 ft</li>
+                            <li><strong>Aircraft:</strong> 40</li>
+                            <li><strong>Propulsion:</strong> Integrated Electric Propulsion (gas turbines and diesel generators)</li>
+                            <li><strong>Crew:</strong> 1,600 (including air wing)</li>
+                            <li><strong>Features:</strong> STOVL configuration, no catapults or arrestor wires</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Type 003 Card -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../assets/images/type-003.jpg" alt="Type 003 aircraft carrier">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Type 003 (Fujian)</h3>
+                        <p>The Type 003 aircraft carrier (Fujian) is China's newest and most advanced aircraft carrier, featuring electromagnetic catapults similar to the Ford class.</p>
+                        <ul>
+                            <li><strong>Displacement:</strong> 80,000+ tons (estimated)</li>
+                            <li><strong>Length:</strong> 1,040 ft (estimated)</li>
+                            <li><strong>Aircraft:</strong> 40-60 (estimated)</li>
+                            <li><strong>Propulsion:</strong> Conventional (non-nuclear)</li>
+                            <li><strong>Features:</strong> Electromagnetic catapult system (EMALS), fixed wing aircraft capability</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submarines Section -->
+    <section id="submarines" class="bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Submarines</h2>
+            </div>
+            <div class="card-grid">
+                <!-- Virginia Class Card -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../assets/images/virginia-class.jpg" alt="Virginia Class submarine">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Virginia Class</h3>
+                        <p>The Virginia class is a class of nuclear-powered fast attack submarines in service with the United States Navy, designed for a broad spectrum of open-ocean and littoral missions.</p>
+                        <ul>
+                            <li><strong>Displacement:</strong> 7,800 tons (submerged)</li>
+                            <li><strong>Length:</strong> 377 ft</li>
+                            <li><strong>Speed:</strong> 25+ knots (submerged)</li>
+                            <li><strong>Armament:</strong> Tomahawk cruise missiles, torpedoes</li>
+                            <li><strong>Crew:</strong> 135</li>
+                            <li><strong>Features:</strong> Photonics mast, fly-by-wire control system</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Borei Class Card -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../assets/images/borei-class.jpg" alt="Borei Class submarine">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Borei Class</h3>
+                        <p>The Borei class is a class of nuclear-powered ballistic missile submarines in service with the Russian Navy, designed to replace the aging Delta III, Delta IV and Typhoon classes.</p>
+                        <ul>
+                            <li><strong>Displacement:</strong> 24,000 tons (submerged)</li>
+                            <li><strong>Length:</strong> 170 m (557 ft)</li>
+                            <li><strong>Speed:</strong> 29 knots (submerged)</li>
+                            <li><strong>Armament:</strong> 16 Bulava SLBMs, torpedoes</li>
+                            <li><strong>Crew:</strong> 107</li>
+                            <li><strong>Features:</strong> Pump-jet propulsion, improved acoustic stealth</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Astute Class Card -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../assets/images/astute-class.jpg" alt="Astute Class submarine">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Astute Class</h3>
+                        <p>The Astute class is the latest class of nuclear-powered fleet submarines in service with the Royal Navy, designed as a replacement for the Trafalgar-class submarines.</p>
+                        <ul>
+                            <li><strong>Displacement:</strong> 7,400 tons (submerged)</li>
+                            <li><strong>Length:</strong> 97 m (318 ft)</li>
+                            <li><strong>Speed:</strong> 30+ knots (submerged)</li>
+                            <li><strong>Armament:</strong> Tomahawk cruise missiles, Spearfish torpedoes</li>
+                            <li><strong>Crew:</strong> 98</li>
+                            <li><strong>Features:</strong> Advanced sonar systems, no periscope (uses optronic masts)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destroyers and Frigates Section -->
+    <section id="surface-combatants">
+        <div class="container">
+            <div class="section-title">
+                <h2>Destroyers and Frigates</h2>
+            </div>
+            <div class="card-grid">
+                <!-- Zumwalt Class Card -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../assets/images/zumwalt.jpg" alt="Zumwalt Class destroyer">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Zumwalt Class</h3>
+                        <p>The Zumwalt class is a class of three stealth guided missile destroyers designed for land attack and littoral dominance with a focus on stealth technology.</p>
+                        <ul>
+                            <li><strong>Displacement:</strong> 15,995 tons</li>
+                            <li><strong>Length:</strong> 610 ft</li>
+                            <li><strong>Speed:</strong> 30+ knots</li>
+                            <li><strong>Armament:</strong> Advanced Gun System, vertical launch cells</li>
+                            <li><strong>Crew:</strong> 175</li>
+                            <li><strong>Features:</strong> Tumblehome hull, integrated power system, stealth design</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Type 055 Card -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../assets/images/type-055.jpg" alt="Type 055 destroyer">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Type 055 Destroyer</h3>
+                        <p>The Type 055 destroyer is a class of stealth guided missile destroyers being constructed for the Chinese People's Liberation Army Navy, considered among the most advanced surface combatants in Asia.</p>
+                        <ul>
+                            <li><strong>Displacement:</strong> 13,000 tons</li>
+                            <li><strong>Length:</strong> 180 m (590 ft)</li>
+                            <li><strong>Speed:</strong> 30 knots</li>
+                            <li><strong>Armament:</strong> 112 vertical launch cells, main gun, anti-submarine weapons</li>
+                            <li><strong>Features:</strong> Integrated mast, advanced radar systems</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- FREMM Card -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../assets/images/fremm.jpg" alt="FREMM frigate">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">FREMM Frigate</h3>
+                        <p>The FREMM (European multi-purpose frigate) is a class of multi-purpose frigates designed by France and Italy for their navies, and has been adopted by several other nations.</p>
+                        <ul>
+                            <li><strong>Displacement:</strong> 6,000 tons</li>
+                            <li><strong>Length:</strong> 144 m (472 ft)</li>
+                            <li><strong>Speed:</strong> 27+ knots</li>
+                            <li><strong>Armament:</strong> Anti-ship missiles, land attack cruise missiles, torpedoes</li>
+                            <li><strong>Crew:</strong> 108-145 (depending on variant)</li>
+                            <li><strong>Features:</strong> Stealth design, modular mission capability</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unmanned Naval Vehicles Section -->
+    <section id="unmanned" class="bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Unmanned Naval Vehicles</h2>
+            </div>
+            <div class="content-with-image">
+                <div class="content">
+                    <h3>The Future of Naval Warfare</h3>
+                    <p>Unmanned naval vehicles represent a significant shift in maritime operations, offering capabilities ranging from persistent surveillance to anti-submarine warfare without risking human operators.</p>
+                    
+                    <h4>Key Developments:</h4>
+                    <ul>
+                        <li><strong>Unmanned Surface Vessels (USVs):</strong> Autonomous or remotely operated surface ships for reconnaissance, mine countermeasures, and potentially combat operations.</li>
+                        <li><strong>Unmanned Underwater Vehicles (UUVs):</strong> Autonomous submarines for intelligence gathering, mine detection, and potentially offensive operations.</li>
+                        <li><strong>Large Displacement UUVs:</strong> Submarine-sized autonomous underwater vehicles capable of extended missions.</li>
+                        <li><strong>Drone Swarms:</strong> Multiple coordinated unmanned vessels operating together for overwhelming effect.</li>
+                    </ul>
+                    
+                    <h4>Notable Systems:</h4>
+                    <ul>
+                        <li><strong>Sea Hunter:</strong> DARPA's Medium Displacement USV designed for anti-submarine warfare and surveillance.</li>
+                        <li><strong>Orca XLUUV:</strong> Boeing's Extra Large UUV designed for extended autonomous underwater operations.</li>
+                        <li><strong>REMUS:</strong> Family of autonomous underwater vehicles used for mine countermeasures and underwater survey.</li>
+                    </ul>
+                    
+                    <h4>Advantages:</h4>
+                    <ul>
+                        <li>Reduced risk to human operators</li>
+                        <li>Persistent operations without crew fatigue</li>
+                        <li>Potential cost savings compared to manned vessels</li>
+                        <li>Ability to operate in hazardous environments</li>
+                    </ul>
+                </div>
+                <div class="image">
+                    <img src="../assets/images/unmanned-naval.jpg" alt="Unmanned surface vessel concept">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Comparison Tool -->
+    <section class="comparison">
+        <div class="container">
+            <div class="section-title">
+                <h2>Naval Systems Comparison</h2>
+            </div>
+            <div class="comparison-tool">
+                <form id="naval-comparison-form">
+                    <div class="comparison-selectors">
+                        <div class="comparison-select">
+                            <label for="naval-category">Category:</label>
+                            <select id="naval-category" required>
+                                <option value="">Select Category</option>
+                                <option value="carriers">Aircraft Carriers</option>
+                                <option value="submarines">Submarines</option>
+                                <option value="destroyers">Destroyers</option>
+                            </select>
+                        </div>
+                        <div class="comparison-select">
+                            <label for="naval-item1">System 1:</label>
+                            <select id="naval-item1" required>
+                                <option value="">Select System</option>
+                                <!-- Options will be populated by JavaScript -->
+                            </select>
+                        </div>
+                        <div class="comparison-select">
+                            <label for="naval-item2">System 2:</label>
+                            <select id="naval-item2" required>
+                                <option value="">Select System</option>
+                                <!-- Options will be populated by JavaScript -->
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Compare</button>
+                </form>
+                <div class="comparison-results">
+                    <table id="naval-comparison-table" class="comparison-table">
+                        <tr>
+                            <td colspan="3">Select systems to compare</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Naval Systems Gallery</h2>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="../assets/images/gallery-naval-1.jpg" alt="Aircraft carrier battle group">
+                    <div class="gallery-caption">Carrier Strike Group underway</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/gallery-naval-2.jpg" alt="Submarine surfacing">
+                    <div class="gallery-caption">Nuclear submarine surfacing</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/gallery-naval-3.jpg" alt="Destroyer firing missile">
+                    <div class="gallery-caption">Guided missile destroyer firing</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/gallery-naval-4.jpg" alt="Aircraft carrier flight deck operations">
+                    <div class="gallery-caption">Flight deck operations</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/gallery-naval-5.jpg" alt="Amphibious assault ship">
+                    <div class="gallery-caption">Amphibious assault ship with helicopters</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/gallery-naval-6.jpg" alt="Unmanned surface vessel">
+                    <div class="gallery-caption">Unmanned surface vessel during testing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Defense<span>Tech</span></h3>
+                    <p>Exploring modern military technology and defense systems across all domains.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="land.html">Land Systems</a></li>
+                        <li><a href="naval.html">Naval Systems</a></li>
+                        <li><a href="air.html">Air Systems</a></li>
+                        <li><a href="space-cyber.html">Space & Cyber</a></li>
+                        <li><a href="future.html">Future Tech</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Disclaimer</h3>
+                    <p>This website is for educational purposes only. All information is publicly available and not classified.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DefenseTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script>
+        // Additional JavaScript for the naval systems comparison tool
+        document.addEventListener('DOMContentLoaded', function() {
+            const categorySelect = document.getElementById('naval-category');
+            const item1Select = document.getElementById('naval-item1');
+            const item2Select = document.getElementById('naval-item2');
+            const comparisonForm = document.getElementById('naval-comparison-form');
+            const comparisonTable = document.getElementById('naval-comparison-table');
+            
+            if (categorySelect && item1Select && item2Select && comparisonForm) {
+                // Sample data for dropdown options
+                const options = {
+                    'carriers': ['Gerald R. Ford Class', 'Queen Elizabeth Class', 'Type 003 (Fujian)', 'Nimitz Class', 'Charles de Gaulle'],
+                    'submarines': ['Virginia Class', 'Borei Class', 'Astute Class', 'Yasen Class', 'Type 095'],
+                    'destroyers': ['Zumwalt Class', 'Type 055', 'Arleigh Burke Class', 'Sejong the Great Class', 'Horizon Class']
+                };
+                
+                // Update system options when category changes
+                categorySelect.addEventListener('change', function() {
+                    const category = this.value;
+                    
+                    // Clear previous options
+                    item1Select.innerHTML = '<option value="">Select System</option>';
+                    item2Select.innerHTML = '<option value="">Select System</option>';
+                    
+                    if (category && options[category]) {
+                        // Add new options
+                        options[category].forEach(option => {
+                            item1Select.innerHTML += `<option value="${option}">${option}</option>`;
+                            item2Select.innerHTML += `<option value="${option}">${option}</option>`;
+                        });
+                    }
+                });
+                
+                // Handle form submission
+                comparisonForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const category = categorySelect.value;
+                    const item1 = item1Select.value;
+                    const item2 = item2Select.value;
+                    
+                    // Sample comparison data
+                    const data = {
+                        'carriers': {
+                            'Gerald R. Ford Class': {
+                                'Displacement': '100,000 tons',
+                                'Length': '1,106 ft',
+                                'Aircraft': '75+',
+                                'Propulsion': 'Nuclear (2 A1B reactors)',
+                                'Crew': '4,550',
+                                'Launch System': 'EMALS',
+                                'Country': 'United States'
+                            },
+                            'Queen Elizabeth Class': {
+                                'Displacement': '65,000 tons',
+                                'Length': '932 ft',
+                                'Aircraft': '40',
+                                'Propulsion': 'Integrated Electric (non-nuclear)',
+                                'Crew': '1,600',
+                                'Launch System': 'Ski jump (STOVL)',
+                                'Country': 'United Kingdom'
+                            },
+                            'Type 003 (Fujian)': {
+                                'Displacement': '80,000+ tons',
+                                'Length': '1,040 ft',
+                                'Aircraft': '40-60',
+                                'Propulsion': 'Conventional (non-nuclear)',
+                                'Crew': 'Unknown',
+                                'Launch System': 'EMALS',
+                                'Country': 'China'
+                            },
+                            'Nimitz Class': {
+                                'Displacement': '97,000 tons',
+                                'Length': '1,092 ft',
+                                'Aircraft': '60+',
+                                'Propulsion': 'Nuclear (2 A4W reactors)',
+                                'Crew': '5,000+',
+                                'Launch System': 'Steam catapults',
+                                'Country': 'United States'
+                            },
+                            'Charles de Gaulle': {
+                                'Displacement': '42,500 tons',
+                                'Length': '858 ft',
+                                'Aircraft': '40',
+                                'Propulsion': 'Nuclear (2 K15 reactors)',
+                                'Crew': '1,950',
+                                'Launch System': 'Steam catapults',
+                                'Country': 'France'
+                            }
+                        },
+                        'submarines': {
+                            'Virginia Class': {
+                                'Displacement': '7,800 tons (submerged)',
+                                'Length': '377 ft',
+                                'Speed': '25+ knots (submerged)',
+                                'Armament': 'Tomahawk missiles, torpedoes',
+                                'Crew': '135',
+                                'Diving Depth': '800+ ft (estimated)',
+                                'Country': 'United States'
+                            },
+                            'Borei Class': {
+                                'Displacement': '24,000 tons (submerged)',
+                                'Length': '170 m (557 ft)',
+                                'Speed': '29 knots (submerged)',
+                                'Armament': '16 Bulava SLBMs, torpedoes',
+                                'Crew': '107',
+                                'Diving Depth': '450 m (estimated)',
+                                'Country': 'Russia'
+                            },
+                            'Astute Class': {
+                                'Displacement': '7,400 tons (submerged)',
+                                'Length': '97 m (318 ft)',
+                                'Speed': '30+ knots (submerged)',
+                                'Armament': 'Tomahawk missiles, Spearfish torpedoes',
+                                'Crew': '98',
+                                'Diving Depth': '300+ m (estimated)',
+                                'Country': 'United Kingdom'
+                            },
+                            'Yasen Class': {
+                                'Displacement': '13,800 tons (submerged)',
+                                'Length': '139 m (456 ft)',
+                                'Speed': '35 knots (submerged)',
+                                'Armament': 'Cruise missiles, torpedoes',
+                                'Crew': '90',
+                                'Diving Depth': '600 m (estimated)',
+                                'Country': 'Russia'
+                            },
+                            'Type 095': {
+                                'Displacement': '7,000+ tons (estimated)',
+                                'Length': '110 m (estimated)',
+                                'Speed': '30+ knots (estimated)',
+                                'Armament': 'Cruise missiles, torpedoes',
+                                'Crew': 'Unknown',
+                                'Diving Depth': 'Unknown',
+                                'Country': 'China'
+                            }
+                        },
+                        'destroyers': {
+                            'Zumwalt Class': {
+                                'Displacement': '15,995 tons',
+                                'Length': '610 ft',
+                                'Speed': '30+ knots',
+                                'Armament': 'Advanced Gun System, VLS cells',
+                                'Crew': '175',
+                                'Radar': 'AN/SPY-3 multifunction radar',
+                                'Country': 'United States'
+                            },
+                            'Type 055': {
+                                'Displacement': '13,000 tons',
+                                'Length': '180 m (590 ft)',
+                                'Speed': '30 knots',
+                                'Armament': '112 VLS cells, main gun',
+                                'Crew': '300+',
+                                'Radar': 'Type 346B AESA radar',
+                                'Country': 'China'
+                            },
+                            'Arleigh Burke Class': {
+                                'Displacement': '9,800 tons',
+                                'Length': '509 ft (Flight IIA)',
+                                'Speed': '30+ knots',
+                                'Armament': '96 VLS cells, main gun',
+                                'Crew': '329',
+                                'Radar': 'AN/SPY-1 radar (AEGIS)',
+                                'Country': 'United States'
+                            },
+                            'Sejong the Great Class': {
+                                'Displacement': '11,000 tons',
+                                'Length': '166 m (545 ft)',
+                                'Speed': '30 knots',
+                                'Armament': '128 VLS cells, main gun',
+                                'Crew': '300',
+                                'Radar': 'AESA radar (AEGIS)',
+                                'Country': 'South Korea'
+                            },
+                            'Horizon Class': {
+                                'Displacement': '7,050 tons',
+                                'Length': '153 m (502 ft)',
+                                'Speed': '29+ knots',
+                                'Armament': '48 VLS cells, main gun',
+                                'Crew': '230',
+                                'Radar': 'EMPAR radar',
+                                'Country': 'France/Italy'
+                            }
+                        }
+                    };
+                    
+                    // Check if category and items exist
+                    if (!data[category] || !data[category][item1] || !data[category][item2]) {
+                        comparisonTable.innerHTML = '<tr><td colspan="3">Data not available for selected systems</td></tr>';
+                        return;
+                    }
+                    
+                    // Build table
+                    let tableHTML = `
+                        <tr>
+                            <th>Specification</th>
+                            <th>${item1}</th>
+                            <th>${item2}</th>
+                        </tr>
+                    `;
+                    
+                    // Get all specs from both items
+                    const specs = new Set();
+                    Object.keys(data[category][item1]).forEach(spec => specs.add(spec));
+                    Object.keys(data[category][item2]).forEach(spec => specs.add(spec));
+                    
+                    // Add rows for each spec
+                    specs.forEach(spec => {
+                        const value1 = data[category][item1][spec] || 'N/A';
+                        const value2 = data[category][item2][spec] || 'N/A';
+                        
+                        tableHTML += `
+                            <tr>
+                                <td>${spec}</td>
+                                <td>${value1}</td>
+                                <td>${value2}</td>
+                            </tr>
+                        `;
+                    });
+                    
+                    comparisonTable.innerHTML = tableHTML;
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defense Technology | Modern Military Systems</title>
+    <meta name="description" content="Explore modern defense technology including land, naval, air, space and cyber systems. Learn about current and future military technologies.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Netlify Identity Widget -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Defense<span>Tech</span></a>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Systems <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="pages/land.html">Land Systems</a>
+                            <a href="pages/naval.html">Naval Systems</a>
+                            <a href="pages/air.html">Air Systems</a>
+                            <a href="pages/space-cyber.html">Space & Cyber</a>
+                        </div>
+                    </li>
+                    <li><a href="pages/future.html">Future Tech</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Modern Defense Technology</h1>
+            <p>Exploring the cutting-edge systems that define modern military capabilities across land, sea, air, space, and cyberspace.</p>
+            <a href="#categories" class="btn">Explore Categories</a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Defense Technology Categories</h2>
+            </div>
+            <div class="card-grid">
+                <!-- Land Systems Card -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/images/land-systems.jpg" alt="Modern tank in action">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Land Systems</h3>
+                        <p>Modern tanks, artillery, infantry equipment, and future combat systems that define ground warfare.</p>
+                        <a href="pages/land.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Naval Systems Card -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/images/naval-systems.jpg" alt="Aircraft carrier with escort ships">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Naval Systems</h3>
+                        <p>Aircraft carriers, submarines, destroyers, and unmanned naval vehicles that control the seas.</p>
+                        <a href="pages/naval.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Air Systems Card -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/images/air-systems.jpg" alt="Fighter jet in flight">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Air Systems</h3>
+                        <p>Fighter aircraft, bombers, military drones, and helicopters that dominate the skies.</p>
+                        <a href="pages/air.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Space & Cyber Card -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/images/space-cyber.jpg" alt="Military satellite in orbit">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Space & Cyber</h3>
+                        <p>Military satellites, space-based defense systems, cybersecurity, and electronic warfare technologies.</p>
+                        <a href="pages/space-cyber.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles Section -->
+    <section class="featured-articles bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Latest Articles</h2>
+            </div>
+            <div class="card-grid" id="featured-articles">
+                <!-- Articles will be dynamically loaded here -->
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i> Loading articles...
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="articles.html" class="btn btn-outline">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Technology Slider -->
+    <section class="featured">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Technologies</h2>
+            </div>
+            <div class="slider">
+                <div class="slider-container">
+                    <!-- Slider Item 1 -->
+                    <div class="slider-item">
+                        <div class="slider-content">
+                            <h3>F-35 Lightning II</h3>
+                            <p>The F-35 Lightning II is a family of single-seat, single-engine, all-weather stealth multirole fighters. It is designed to perform ground-attack and air-superiority missions.</p>
+                            <a href="pages/air.html#f35" class="btn">Read More</a>
+                        </div>
+                        <div class="slider-image">
+                            <img src="assets/images/f35.jpg" alt="F-35 Lightning II fighter jet">
+                        </div>
+                    </div>
+                    
+                    <!-- Slider Item 2 -->
+                    <div class="slider-item">
+                        <div class="slider-content">
+                            <h3>Hypersonic Missiles</h3>
+                            <p>Hypersonic missiles travel at speeds of Mach 5 or higher, making them difficult to detect and intercept with current defense systems. They represent the cutting edge of missile technology.</p>
+                            <a href="pages/future.html#hypersonic" class="btn">Read More</a>
+                        </div>
+                        <div class="slider-image">
+                            <img src="assets/images/hypersonic.jpg" alt="Hypersonic missile concept">
+                        </div>
+                    </div>
+                    
+                    <!-- Slider Item 3 -->
+                    <div class="slider-item">
+                        <div class="slider-content">
+                            <h3>Autonomous Combat Vehicles</h3>
+                            <p>Autonomous combat vehicles use AI and advanced sensors to navigate battlefields and engage targets with minimal human intervention, potentially reducing casualties and increasing operational efficiency.</p>
+                            <a href="pages/land.html#autonomous" class="btn">Read More</a>
+                        </div>
+                        <div class="slider-image">
+                            <img src="assets/images/autonomous.jpg" alt="Autonomous combat vehicle">
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-prev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-next" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Developments Section -->
+    <section class="latest">
+        <div class="container">
+            <div class="section-title">
+                <h2>Latest Developments</h2>
+            </div>
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Next-Generation Combat Aircraft</h3>
+                        <p>Development of sixth-generation fighter aircraft with advanced AI integration, directed energy weapons, and enhanced stealth capabilities.</p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Quantum Radar Systems</h3>
+                        <p>Quantum radar technology that could potentially detect stealth aircraft by using quantum entanglement principles.</p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>AI-Powered Battlefield Management</h3>
+                        <p>Artificial intelligence systems that analyze battlefield data in real-time to provide commanders with optimal tactical decisions.</p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Advanced Naval Propulsion</h3>
+                        <p>Development of magnetohydrodynamic propulsion systems for naval vessels, potentially enabling silent running and higher speeds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Comparison Tool -->
+    <section class="comparison">
+        <div class="container">
+            <div class="section-title">
+                <h2>Technology Comparison Tool</h2>
+            </div>
+            <div class="comparison-tool">
+                <form id="comparison-form">
+                    <div class="comparison-selectors">
+                        <div class="comparison-select">
+                            <label for="category">Category:</label>
+                            <select id="category" required>
+                                <option value="">Select Category</option>
+                                <option value="tanks">Main Battle Tanks</option>
+                                <option value="fighters">Fighter Aircraft</option>
+                                <option value="ships">Naval Vessels</option>
+                            </select>
+                        </div>
+                        <div class="comparison-select">
+                            <label for="item1">System 1:</label>
+                            <select id="item1" required>
+                                <option value="">Select System</option>
+                                <!-- Options will be populated by JavaScript -->
+                            </select>
+                        </div>
+                        <div class="comparison-select">
+                            <label for="item2">System 2:</label>
+                            <select id="item2" required>
+                                <option value="">Select System</option>
+                                <!-- Options will be populated by JavaScript -->
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Compare</button>
+                </form>
+                <div class="comparison-results">
+                    <table id="comparison-table" class="comparison-table">
+                        <tr>
+                            <td colspan="3">Select systems to compare</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Search Defense Technologies</h2>
+            </div>
+            <form id="search-form" class="search-form">
+                <input type="text" id="search-input" placeholder="Search for technologies..." required>
+                <button type="submit" class="btn"><i class="fas fa-search"></i></button>
+            </form>
+            <div id="search-results" class="search-results">
+                <!-- Search results will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Defense<span>Tech</span></h3>
+                    <p>Exploring modern military technology and defense systems across all domains.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/land.html">Land Systems</a></li>
+                        <li><a href="pages/naval.html">Naval Systems</a></li>
+                        <li><a href="pages/air.html">Air Systems</a></li>
+                        <li><a href="pages/space-cyber.html">Space & Cyber</a></li>
+                        <li><a href="pages/future.html">Future Tech</a></li>
+                        <li><a href="pages/about.html">About</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="admin/">Admin Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Disclaimer</h3>
+                    <p>This website is for educational purposes only. All information is publicly available and not classified.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DefenseTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/article-loader.js"></script>
+    <!-- Netlify Identity Widget Script -->
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>
